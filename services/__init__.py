@@ -1,5 +1,5 @@
 from services.stopwatch import Stopwatch
 from services.database_reader import DatabaseReader
-from services.malwarescanner import MalwareScanner
+from services.malware_scanner import MalwareScanner
 from services import config
-from services.typedargumentparser import TypedArgumentParser
+from services.typed_argument_parser import TypedArgumentParser
