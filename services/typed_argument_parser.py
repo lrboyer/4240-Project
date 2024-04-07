@@ -1,15 +1,17 @@
 from tap import Tap
-from typing import Optional
+from typing import Literal
 
 
 class TypedArgumentParser(Tap):
     """
     CPSC 4240 Malware Scanner
-    It does stuff
     """
-    directory_to_scan: str  # directory to scan
-    verbose: bool = False
+    action: Literal['scan', 'watch', 'lock', 'unlock']
+    path: str  # directory to scan
+
+    verbose: bool = False  # print more detail
 
     def configure(self) -> None:
-        self.add_argument('directory_to_scan')
+        self.add_argument('action')
+        self.add_argument('path')
         self.add_argument('-v', '--verbose')
