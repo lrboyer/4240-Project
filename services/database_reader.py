@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Union
 import pandas as pd
-import config
+from services import config
 
 
 class DatabaseReader:
