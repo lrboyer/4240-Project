@@ -6,7 +6,7 @@ import config
 
 class DatabaseReader:
     @staticmethod
-    def read_database(path: Union[Path, str]):
-        db = pd.read_csv(path, comment='#')
+    def read_database(file: Union[Path, str]):
+        db = pd.read_csv(file, comment='#')
         db.set_index(config.MALWARE_DB_INDEX_NAME, inplace=True)
         return db
