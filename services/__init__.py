@@ -5,3 +5,4 @@ from services.typed_argument_parser import TypedArgumentParser
 from services.file_prison import FilePrison
 from services.logger import *
 from services.malware_watcher import MalwareWatcher
+from services.malware_analyzer import MalwareAnalyzer
